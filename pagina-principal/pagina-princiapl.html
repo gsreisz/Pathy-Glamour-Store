@@ -98,6 +98,17 @@
                 </div>
 
             </main>
+    <script>
+         const user = JSON.parse(localStorage.getItem('loggedUser'));
+        
+        if (!user) {
+          window.location.href = 'login.html';
+       
+        } else {
+          alert(`Bem-vindo, ${user.username}! Você entrou com sucesso.`);
+    
+        }
+    </script>
 
 <body>
     
