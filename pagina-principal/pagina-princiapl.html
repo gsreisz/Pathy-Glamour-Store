@@ -23,9 +23,9 @@
                     <div class="cabeçalho">
 
                         <h2> <a href="#scroll-destaque"> DESTAQUES </a></h2>
-                        <h2> MASCULINO </h2>
-                        <h2> FEMININO </h2>
-                        <h2> BOLSAS </h2>
+                        <h2> <a href="#masculino"> MASCULINO </a> </h2>
+                        <h2> <a href="#feminino"> FEMININO </a> </h2>
+                        <h2> <a href="#bolsa"> BOLSAS </a> </h2>
 
                     </div>
 
@@ -35,8 +35,11 @@
 
                     <div class="img-op">
 
-                        <img src="login.svg" alt="login">
-                        <img src="Cart.svg" alt="carrinho">
+                        <button id="btncolor" onclick="colorChange()">
+                            <img src="contrast.png" alt="botão para alterar cor">
+                        </button>
+                        <img src="profile.png" alt="login">
+                        <img src="cart.png" alt="carrinho">
                     
                     </div>
 
@@ -48,7 +51,8 @@
 
             <div class="banners">
 
-                <img src="Banner.png" alt="banner-pathy-glamour" id="banner-principal">
+                <img class="banner active" src="Banner.png" alt="banner-pathy-glamour" id="banner-principal">
+                <img class="banner" src="Imagem promocional do site.png" alt="Banner promocional" id="banner-promocional">
                 
             </div>
 
@@ -66,28 +70,31 @@
 
                             <div class="item-destaque">
 
-                                <img src="CATALOGO-DESTAQUE/Vestido Antonella em tecido viscolinho..jpg" alt="vestido1">
+                                <img class="img1" src="CATALOGO-DESTAQUE/Vestido Antonella em tecido viscolinho..jpg" alt="vestido Antonella frente">
+                                <img class="img2" src="/pagina-principal/CATALOGO-DESTAQUE/Vestido Antonella em tecido viscolinho. (1).jpg" alt="Vestido Antonella verso">
                                 
-                                <p>Vestido Antonella</p>
-                                <h1 id="valores">R$238,80</h1>
+                                <p class="descricao">Vestido Antonella</p>
+                                <h1 class="valores">R$239,90</h1>
 
                             </div>
                         
                             <div class="item-destaque">
 
-                                <img src="CATALOGO-DESTAQUE/vestido2.jpg" alt="vestido2">
+                                <img class="img1" src="CATALOGO-DESTAQUE/vestido2.jpg" alt="vestido glamour frente">
+                                <img class="img2" src="CATALOGO-DESTAQUE/vestido2.1.jpg" alt="vestido glamour verso">
 
-                                <p>Vestido Glamour</p>
-                                <h1 id="valores">R$320,00</h1>
+                                <p class="descricao">Vestido Glamour</p>
+                                <h1 class="valores">R$319,90</h1>
 
                             </div>
                         
                             <div class="item-destaque">
 
-                                <img src="CATALOGO-DESTAQUE/vestido3.jpg" alt="vestido3">
+                                <img class="img1" src="CATALOGO-DESTAQUE/vestido3.jpg" alt="vestido boho frente">
+                                <img class="img2" src="CATALOGO-DESTAQUE/vestido3.1.jpg" alt="vestido boho verso">
 
-                                <p>Vestido Boho</p>
-                                <h1 id="valores">R$310,00</h1>
+                                <p class="descricao">Vestido Boho</p>
+                                <h1 class="valores">R$309,90</h1>
 
                             </div>
                         
@@ -97,8 +104,170 @@
 
                 </div>
 
+            <div class="destaques">
+
+                <h1 id="masculino"> MASCULINO </h1>
+
+                    <div class="roupas">
+
+                        <div class="content-destaque1">
+
+                            <div class="item-destaque">
+
+                                <img class="img1" src="catalogo-masc/foto-frente1.jpg" alt="Conjunto polo e jeans frente">
+                                <img class="img2" src="catalogo-masc/foto-verso1.jpg" alt="Conjunto polo e jeans verso">
+                                
+                                <p class="descricao">Conjunto Polo e Jeans</p>
+                                <h1 class="valores">R$339,90</h1>
+
+                            </div>
+                        
+                            <div class="item-destaque">
+
+                                <img class="img1" src="catalogo-masc/foto-frente2.png" alt="bermuda black frente">
+                                <img class="img2" src="catalogo-masc/foto-verso2.png" alt="bermuda black verso">
+
+                                <p class="descricao">Bermuda Jeans</p>
+                                <h1 class="valores">R$119,90</h1>
+
+                            </div>
+                        
+                            <div class="item-destaque">
+
+                                <img class="img1" src="catalogo-masc/foto-frente3.jpg" alt="camisa praieira listrada">
+                                <img class="img2" src="catalogo-masc/foto-verso3.jpg" alt="camisa praieira florida">
+                                <p class="descricao">Camisa Havaiana</p>
+                                <h1 class="valores">R$189,90</h1>
+
+                            </div>
+                            
+                        </div>
+    
+                    </div>
+    
+            </div>
+
+            <div class="destaques">
+
+                <h1 id="feminino"> FEMININO </h1>
+
+                    <div class="roupas">
+
+                        <div class="content-destaque1">
+
+                            <div class="item-destaque">
+
+                                <img class="img1" src="catalogo-fem/foto-frente1.jpg" alt="short jeans frente">
+                                <img class="img2" src="catalogo-fem/foto-verso1.jpg" alt="short jeans verso">
+                                
+                                <p class="descricao">Short Jeans</p>
+                                <h1 class="valores">R$155,00</h1>
+
+                            </div>
+                        
+                            <div class="item-destaque">
+
+                                <img class="img1" src="catalogo-fem/foto-frente2.jpg" alt="vestido bordado frente">
+                                <img class="img2" src="catalogo-fem/foto-verso2.jpg" alt="vestido bordado verso">
+
+                                <p class="descricao">Vestido Bordado</p>
+                                <h1 class="valores">R$250,00</h1>
+
+                            </div>
+                        
+                            <div class="item-destaque">
+
+                                <img class="img1" src="catalogo-fem/foto-frente3.jpg" alt="conjunto moletinho frente">
+                                <img class="img2" src="catalogo-fem/foto-verso3.jpg" alt="conjunto moletinho verso">
+
+                                <p class="descricao">Conjunto Moletinho</p>
+                                <h1 class="valores">R$185,00</h1>
+
+                            </div>
+                        
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="destaques">
+
+                    <h1 id="bolsa"> BOLSAS </h1>
+    
+                        <div class="roupas">
+    
+                            <div class="content-destaque1">
+    
+                                <div class="item-destaque">
+
+                                    <img class="img1" src="catalogo-bolsas/foto-frente1.jpg" alt="bolsa laranja frente">
+                                    <img class="img2" src="catalogo-bolsas/foto-verso1.jpg" alt="bolsa laranja verso">
+                                    
+                                    <p class="descricao">Bolsa Feminina Cisne </p>
+                                    <h1 class="valores">R$179,90</h1>
+    
+                                </div>
+                            
+                                <div class="item-destaque">
+    
+                                    <img class="img1" src="catalogo-bolsas/bolsa-frente2.png" alt="bolsa preta frente">
+                                    <img class="img2" src="catalogo-bolsas/bolsa-verso2.png" alt="bolsa preta verso">
+    
+                                    <p class="descricao">Bolsa Black Vintage </p>
+                                    <h1 class="valores">R$219,90</h1>
+    
+                                </div>
+                            
+                                <div class="item-destaque">
+    
+                                    <img class="img1" src="catalogo-bolsas/bolsa-verso3.png" alt="bolsa marrom frente">
+                                    <img class="img2" src="catalogo-bolsas/bolsa-frente3.png" alt="bolsa marrom verso">
+    
+                                    <p class="descricao">Bolsa </p>
+                                    <h1 class="valores">R$199,90</h1>
+    
+                                </div>
+                            
+                            </div>
+    
+                        </div>
+    
+                </div>
+
             </main>
 
+            <!--Rodapé da página-->
+            <footer>
+                <div class="contatobox">
+                    <h2 id="contato-text">Contato</h2>
+                </div>
+
+                <div class="cont-icons">
+                    <div class="icons">
+                        <a href="#">
+                            <img src="#" alt="Email">
+                        </a>
+                    </div>
+
+                    <div class="icons">
+                        <a href="#">
+                            <img src="#" alt="Instagram">
+                        </a>
+                    </div>
+
+                    <div class="icons">
+                        <a href="#">
+                            <img src="#" alt="Whatsapp">
+                        </a>
+                    </div>
+                </div>
+
+                <p id="copyright">&copy; 2025 Pathy Glamour Store. Todos os direitos reservados.</p>
+            </footer>
+            <!--rodapé da página-->
+
+            <script src="javascript.js"></script>
 <body>
     
 </html>
