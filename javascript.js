@@ -37,13 +37,47 @@ else {
 motherColor = !motherColor;
 }
 
-let currentIndex = 0;
-const banners = document.querySelectorAll('.banners img');
+    let currentIndex = 0;
+    const banners = document.querySelectorAll('.banners img');
 
-function showNextBanner() {
+    function showNextBanner() {
     banners[currentIndex].classList.remove('active');
     currentIndex = (currentIndex + 1) % banners.length;
     banners[currentIndex].classList.add('active');
 }
 
-setInterval(showNextBanner, 8000); // Muda a imagem a cada 8 segundos
+setInterval(showNextBanner, 5000); // Muda a imagem a cada 5 segundos
+
+// Função para cadastrar usuário
+    document.getElementById('formCadastro')?.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('cadastroEmail').value;
+    const senha = document.getElementById('cadastroSenha').value;
+
+    localStorage.setItem('email', email);
+    localStorage.setItem('senha', senha);
+    alert('Cadastro realizado com sucesso!');
+    window.location.href = 'login.html';
+});
+
+// Função para efetuar login
+    document.getElementById('formLogin')?.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const senha = document.getElementById('senha').value;
+
+    const bancoEmail = localStorage.getItem('email');
+    const bancoSenha = localStorage.getItem('senha');
+
+if (email === bancoEmail && senha === bancoSenha) {
+        window.location.href = 'pagina-principal.html';
+    } 
+else {
+        alert('Email ou senha incorretos!');
+    }
+});
+
+// Função para mostrar informações do usuário na página principal
+    if (document.getElementById('profileInfo')) {
+    const email = localStorage.getItem('email');
+}    

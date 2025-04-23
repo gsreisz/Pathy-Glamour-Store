@@ -16,7 +16,7 @@
 
         <header>
 
-                <div class=" logo-infos ">
+                <div class="logo-infos">
 
                     <img src="logo.png" alt="logo-pathy-glamour" id="logo">
 
@@ -38,7 +38,13 @@
                         <button id="btncolor" onclick="colorChange()">
                             <img src="contrast.png" alt="botão para alterar cor">
                         </button>
-                        <img src="profile.png" alt="login">
+                        <div id="profileInfo">
+                            <button id="profileBut">
+                                <a href="cadastro.html">
+                                    <img src="profile.png" alt="profile icone">
+                                </a>
+                            </button>
+                        </div>
                         <img src="cart.png" alt="carrinho">
                     
                     </div>
@@ -71,7 +77,7 @@
                             <div class="item-destaque">
 
                                 <img class="img1" src="CATALOGO-DESTAQUE/Vestido Antonella em tecido viscolinho..jpg" alt="vestido Antonella frente">
-                                <img class="img2" src="/pagina-principal/CATALOGO-DESTAQUE/Vestido Antonella em tecido viscolinho. (1).jpg" alt="Vestido Antonella verso">
+                                <img class="img2" src="/CATALOGO-DESTAQUE/Vestido Antonella em tecido viscolinho. (1).jpg" alt="Vestido Antonella verso">
                                 
                                 <p class="descricao">Vestido Antonella</p>
                                 <h1 class="valores">R$239,90</h1>
@@ -81,7 +87,7 @@
                             <div class="item-destaque">
 
                                 <img class="img1" src="CATALOGO-DESTAQUE/vestido2.jpg" alt="vestido glamour frente">
-                                <img class="img2" src="CATALOGO-DESTAQUE/vestido2.1.jpg" alt="vestido glamour verso">
+                                <img class="img2" src="/CATALOGO-DESTAQUE/vestido2.1.jpg" alt="vestido glamour verso">
 
                                 <p class="descricao">Vestido Glamour</p>
                                 <h1 class="valores">R$319,90</h1>
@@ -236,18 +242,6 @@
                 </div>
 
             </main>
-    <script>
-         const user = JSON.parse(localStorage.getItem('loggedUser'));
-        
-        if (!user) {
-          window.location.href = 'login.html';
-       
-        } else {
-          alert(`Bem-vindo, ${user.username}! Você entrou com sucesso.`);
-    
-        }
-    </script>
-
             <!--Rodapé da página-->
             <footer>
                 <div class="contatobox">
