@@ -25,7 +25,6 @@ else {
     document.getElementById('bolsa').style.color = '#6f2438'
     document.getElementById('scroll-destaque').style.color = '#6f2438'
     document.getElementById('contato-text').style.color = 'white'
-    document.getElementById('copyright').style.color = 'black'
     const listLength = document.getElementsByClassName('item-destaque').length 
     const list = document.getElementsByClassName('item-destaque')
     // (declaração e criação de variavel index que guarda valor inicial) ; (condição para manter o laço de repetição aberto) ; (ação a ser tomada após fim do ciclo)
@@ -70,7 +69,7 @@ setInterval(showNextBanner, 5000); // Muda a imagem a cada 5 segundos
     const bancoSenha = localStorage.getItem('senha');
 
 if (email === bancoEmail && senha === bancoSenha) {
-        window.location.href = 'pagina-principal.html';
+        window.location.href = 'index.html';
     } 
 else {
         alert('Email ou senha incorretos!');
